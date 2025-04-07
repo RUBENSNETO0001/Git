@@ -1,0 +1,79 @@
+Claro! Aqui vai a **lista dos comandos Git** organizada por categorias e indentada para facilitar a visualização e o entendimento:
+
+---
+
+    Iniciando um repositório
+- `git init` – Inicia um repositório Git
+  - `git init [nome-do-projeto]` – Inicia com nome especificado
+
+---
+
+    Preparando e salvando alterações
+- `git add [arquivo]` – Adiciona arquivo para o commit
+- `git commit -m "mensagem"` – Salva as alterações com uma mensagem
+- `git status` – Mostra o status dos arquivos
+- `git diff` – Mostra as diferenças entre os arquivos
+  - `git diff [arquivo]` – Mostra diferenças específicas
+  - `git diff commit1 commit2` – Compara dois commits
+
+---
+
+    Histórico
+- `git log` – Mostra os commits
+- `git reflog` – Mostra histórico de alterações (inclusive commits perdidos)
+- `git blame [arquivo]` – Mostra quem modificou cada linha de um arquivo
+
+---
+
+    Gerenciamento de arquivos
+- `git rm [arquivo]` – Remove um arquivo
+- `git mv [origem] [destino]` – Move ou renomeia arquivos
+
+---
+
+    Configurações
+- `git config` – Configura o Git
+  - `git config --global user.email "email@exemplo.com"` – Define e-mail global
+
+---
+
+    Trabalhando com branches
+- `git branch` – Lista branches
+  - `git branch [nome]` – Cria um novo branch
+  - `git branch -m [antigo] [novo]` – Renomeia um branch
+- `git checkout [branch]` – Muda de branch
+  - `git checkout -- [arquivo]` – Descarta mudanças em arquivo
+- `git merge [branch]` – Mescla branch com o atual
+- `git cherry-pick [hash]` – Aplica um commit específico de outro branch
+- `git rebase [branch]` – Reorganiza o histórico de commits
+- `git tag [nome]` – Marca uma versão específica
+
+---
+
+    Repositórios remotos
+- `git clone [URL]` – Clona repositório remoto
+- `git remote` – Lista repositórios remotos
+  - `git remote add [nome] [URL]` – Adiciona repositório remoto
+- `git push [remoto] [branch]` – Envia alterações para o repositório remoto
+- `git pull [remoto] [branch]` – Baixa e mescla alterações
+- `git fetch [remoto]` – Baixa alterações sem mesclar
+
+---
+
+    Submódulos
+- `git submodule add [URL] [caminho]` – Adiciona submódulo
+
+---
+
+    Comandos avançados
+- `git reset [arquivo]` – Desfaz alterações (não remove do disco)
+- `git stash` – Guarda alterações temporariamente
+  - `git stash list` – Lista os stashes
+  - `git stash pop` – Recupera último stash
+- `git bisect` – Encontra commit com erro
+  - `git bisect start` – Inicia a busca
+  - `git bisect run [script]` – Executa testes automaticamente
+- `git clean` – Remove arquivos não rastreados
+  - `-n` (simulação), `-f` (força), `-d` (inclui diretórios)
+
+---
